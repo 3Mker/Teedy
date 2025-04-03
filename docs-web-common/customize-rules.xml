@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<ruleset name="Custom Rules"
+    xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+    <description>
+        Custom PMD rules for Java to enforce code quality metrics like Lines of Code (LoC), 
+        Cyclomatic Complexity (CC), Weighted Methods per Class (WMC), 
+        Coupling Between Objects (CBO), and Lack of Cohesion in Methods (LCOM).
+    </description>
+
+    <!-- Avoid methods with too many lines of code (LoC) -->
+    <rule ref="category/java/design.xml/ExcessiveMethodLength">
+        <properties>
+            <property name="minimum" value="50"/> <!-- Adjust as needed -->
+        </properties>
+    </rule>
+
+    <!-- Avoid classes with too many lines of code (LoC) -->
+    <rule ref="category/java/design.xml/ExcessiveClassLength">
+        <properties>
+            <property name="minimum" value="500"/> <!-- Adjust as needed -->
+        </properties>
+    </rule>
+
+    <!-- Enforce cyclomatic complexity limit (CC) -->
+    <rule ref="category/java/complexity.xml/CyclomaticComplexity">
+        <properties>
+            <property name="reportLevel" value="10"/> <!-- Adjust as needed -->
+        </properties>
+    </rule>
+
+    <!-- Limit Weighted Methods per Class (WMC) -->
+    <rule ref="category/java/metrics.xml/ExcessiveWeight">
+        <properties>
+            <property name="minimum" value="50"/> <!-- Adjust as needed -->
+        </properties>
+    </rule>
+
+    <!-- Reduce Coupling Between Objects (CBO) -->
+    <rule ref="category/java/coupling.xml/CouplingBetweenObjects">
+        <properties>
+            <property name="threshold" value="15"/> <!-- Adjust as needed -->
+        </properties>
+    </rule>
+
+    <!-- Detect Lack of Cohesion in Methods (LCOM) -->
+    <rule ref="category/java/metrics.xml/LackOfCohesionMethods">
+        <properties>
+            <property name="minimum" value="2"/> <!-- Adjust as needed -->
+        </properties>
+    </rule>
+
+</ruleset>
