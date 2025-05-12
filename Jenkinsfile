@@ -11,11 +11,6 @@ pipeline {
                 sh 'mvn compile'
             }
         }
-        stage('JaCoCo') {
-            steps {
-                sh 'mvn jacoco:report'
-            }
-        }
         stage('Javadoc') {
             steps {
                 sh 'mvn javadoc:javadoc'
