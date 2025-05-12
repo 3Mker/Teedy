@@ -125,6 +125,20 @@
                     {{ 'document.view.content.open_versions' | translate }}
                   </a>
                 </li>
+                <!-- 图片旋转选项 - 只对图片文件显示 -->
+                <li role="separator" class="divider" ng-if="file.mimetype && file.mimetype.indexOf('image/') === 0"></li>
+                <li ng-if="file.mimetype && file.mimetype.indexOf('image/') === 0">
+                  <a href ng-click="rotateImage(file, -90)" ng-disabled="file.rotating">
+                    <span class="fas fa-undo"></span>
+                    向左旋转
+                  </a>
+                </li>
+                <li ng-if="file.mimetype && file.mimetype.indexOf('image/') === 0">
+                  <a href ng-click="rotateImage(file, 90)" ng-disabled="file.rotating">
+                    <span class="fas fa-redo"></span>
+                    向右旋转
+                  </a>
+                </li>
                 <li role="separator" class="divider"></li>
                 <li>
                   <a href ng-click="deleteFile(file)">
@@ -215,6 +229,20 @@
               <a href ng-click="openVersions(file)">
                 <span class="fas fa-angle-double-left"></span>
                 {{ 'document.view.content.open_versions' | translate }}
+              </a>
+            </li>
+            <!-- 图片旋转选项 - 只对图片文件显示 -->
+            <li role="separator" class="divider" ng-if="file.mimetype && file.mimetype.indexOf('image/') === 0"></li>
+            <li ng-if="file.mimetype && file.mimetype.indexOf('image/') === 0">
+              <a href ng-click="rotateImage(file, -90)" ng-disabled="file.rotating">
+                <span class="fas fa-undo"></span>
+                向左旋转
+              </a>
+            </li>
+            <li ng-if="file.mimetype && file.mimetype.indexOf('image/') === 0">
+              <a href ng-click="rotateImage(file, 90)" ng-disabled="file.rotating">
+                <span class="fas fa-redo"></span>
+                向右旋转
               </a>
             </li>
             <li role="separator" class="divider"></li>

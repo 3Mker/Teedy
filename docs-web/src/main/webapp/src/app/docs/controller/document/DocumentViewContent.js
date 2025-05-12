@@ -224,4 +224,47 @@ angular.module('docs').controller('DocumentViewContent', function ($scope, $root
       }
     })
   };
+
+  /**
+   * Rotate an image.
+   * @param file The file to rotate
+   * @param angle The rotation angle (90, -90, 180, or 270 degrees)
+   */
+  $scope.rotateImage = function (file, angle) {
+    if (!$scope.document.writable || !file || file.mimetype.indexOf('image/') !== 0) {
+      return;
+    }
+    
+    // Display a loading indicator or disable the button to prevent multiple clicks
+    file.rotating = true;
+    
+    // Call the API to rotate the image
+    Restangular.one('file', file.id).post('rotate', {
+      angle: angle
+    }).then(function() {
+      // Reload the file in the view with a timestamp to force image refresh
+      var timestamp = new Date().getTime();
+      
+      // If the file is currently opened in the file viewer, refresh it
+      if ($scope.openedFile && $scope.openedFile.id === file.id) {
+        $state.go('document.view.content.file', {
+          id: $stateParams.id,
+          fileId: file.id,
+          ts: timestamp
+        }, {
+          reload: true
+        });
+      }
+      
+      // Reload the file list to refresh thumbnails
+      $scope.loadFiles();
+      
+      // Remove the loading indicator
+      file.rotating = false;
+    }, function(error) {
+      // Handle errors
+      file.rotating = false;
+      console.error('Error rotating image:', error);
+    });
+  };
 });

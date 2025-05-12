@@ -17,6 +17,45 @@ angular.module('share').controller('FileModalView', function($uibModalInstance, 
   });
 
   /**
+   * Rotate the image.
+   */
+  $scope.rotateImage = function(angle) {
+    // Only proceed for images
+    if (!$scope.file || $scope.file.mimetype.indexOf('image/') !== 0) {
+      return;
+    }
+    
+    Restangular.one('file', $stateParams.fileId).post('rotate', {
+      angle: angle
+    }).then(function() {
+      // Add a timestamp to the URL to force image reload
+      var timestamp = new Date().getTime();
+      
+      // Reload the file to refresh
+      Restangular.one('file/list').get({ id: $stateParams.documentId, share: $stateParams.shareId }).then(function(data) {
+        $scope.files = data.files;
+        
+        // Search current file again
+        _.each($scope.files, function(value) {
+          if (value.id === $stateParams.fileId) {
+            $scope.file = value;
+          }
+        });
+      });
+      
+      // Update the image src with timestamp to force reload
+      var imgElements = document.getElementsByTagName('img');
+      for (var i = 0; i < imgElements.length; i++) {
+        var src = imgElements[i].getAttribute('src');
+        if (src && src.indexOf($stateParams.fileId) !== -1) {
+          imgElements[i].setAttribute('src', src.split('?')[0] + '?ts=' + timestamp + 
+                                     (src.indexOf('share=') !== -1 ? '&share=' + $stateParams.shareId : ''));
+        }
+      }
+    });
+  };
+
+  /**
    * Navigate to the next file.
    */
   $scope.nextFile = function() {

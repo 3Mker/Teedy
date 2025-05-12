@@ -22,11 +22,12 @@
   </div>
   
   <div class="btn-group pull-right">
-    <button type="button" class="btn btn-default" uib-tooltip="Print this file" tooltip-append-to-body="true" ng-click="printFile()">
-      <span class="fas fa-print"></span>
+    <!-- 无条件显示旋转按钮 -->
+    <button type="button" class="btn btn-default" ng-click="rotateImage(-90)">
+      <span class="fas fa-undo"></span> 左转
     </button>
-    <button type="button" class="btn btn-default" uib-tooltip="Download this file" tooltip-append-to-body="true" ng-click="openFile()">
-      <span class="fas fa-download"></span>
+    <button type="button" class="btn btn-default" ng-click="rotateImage(90)">
+      <span class="fas fa-redo"></span> 右转
     </button>
     <button type="button" class="btn btn-default" uib-tooltip="Show text content" tooltip-append-to-body="true" ng-click="openFileContent()">
       <span class="fas fa-eye"></span>

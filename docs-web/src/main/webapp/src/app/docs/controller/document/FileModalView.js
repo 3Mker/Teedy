@@ -27,6 +27,44 @@ angular.module('docs').controller('FileModalView', function ($uibModalInstance, 
     }
   });
 
+  // Load document to check permission
+  Restangular.one('document', $stateParams.id).get().then(function (data) {
+    $scope.document = data;
+  });
+
+  /**
+   * Rotate the image.
+   */
+  $scope.rotateImage = function(angle) {
+    // Only proceed for images
+    if (!$scope.file || $scope.file.mimetype.indexOf('image/') !== 0) {
+      return;
+    }
+    
+    Restangular.one('file', $stateParams.fileId).post('rotate', {
+      angle: angle
+    }).then(function() {
+      // Add a timestamp to the URL to force image reload
+      var timestamp = new Date().getTime();
+      $scope.trustedFileUrl = $sce.trustAsResourceUrl('../api/file/' + $stateParams.fileId + '/data?ts=' + timestamp);
+      
+      // Reload the file to refresh thumbnails
+      Restangular.one('file/list').get({ id: $stateParams.id }).then(function (data) {
+        $scope.files = data.files;
+        setFile(data.files);
+      });
+      
+      // Update the image src with timestamp to force reload
+      var imgElements = document.getElementsByTagName('img');
+      for (var i = 0; i < imgElements.length; i++) {
+        var src = imgElements[i].getAttribute('src');
+        if (src && src.indexOf($stateParams.fileId) !== -1) {
+          imgElements[i].setAttribute('src', src.split('?')[0] + '?ts=' + timestamp);
+        }
+      }
+    });
+  };
+
   /**
    * Return the next file.
    */

@@ -27,6 +27,7 @@ import com.sismics.util.HttpUtil;
 import com.sismics.util.JsonUtil;
 import com.sismics.util.context.ThreadLocalContext;
 import com.sismics.util.mime.MimeType;
+import com.sismics.util.Scalr;
 import org.glassfish.jersey.media.multipart.FormDataBodyPart;
 import org.glassfish.jersey.media.multipart.FormDataParam;
 
@@ -39,6 +40,7 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.core.Response.Status;
 import jakarta.ws.rs.core.StreamingOutput;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URISyntaxException;
@@ -51,6 +53,13 @@ import java.text.MessageFormat;
 import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
+import java.util.Iterator;
+import javax.imageio.ImageIO;
+import javax.imageio.IIOImage;
+import javax.imageio.ImageWriteParam;
+import javax.imageio.ImageWriter;
+import javax.imageio.stream.ImageOutputStream;
+import org.imgscalr.Scalr.Rotation;
 
 /**
  * File REST resources.
@@ -715,6 +724,153 @@ public class FileResource extends BaseResource {
         authenticate();
         List<File> fileList = findFiles(filesIdsList);
         return sendZippedFiles("files", fileList);
+    }
+
+    /**
+     * Rotate an image file.
+     *
+     * @api {post} /file/:id/rotate Rotate an image file
+     * @apiName PostFileRotate
+     * @apiGroup File
+     * @apiParam {String} id File ID
+     * @apiParam {Number} angle Rotation angle in degrees (90, 180, 270, -90)
+     * @apiSuccess {String} status Status OK
+     * @apiError (client) ForbiddenError Access denied
+     * @apiError (client) ValidationError Validation error
+     * @apiError (client) NotFound File not found
+     * @apiError (server) RotationError Error rotating the file
+     * @apiPermission user
+     * @apiVersion 1.12.0
+     *
+     * @param id File ID
+     * @param angle Rotation angle
+     * @return Response
+     */
+    @POST
+    @Path("{id: [a-z0-9\\-]+}/rotate")
+    public Response rotate(
+            @PathParam("id") String id,
+            @FormParam("angle") Integer angle) {
+        if (!authenticate()) {
+            throw new ForbiddenClientException();
+        }
+
+        // Validate input data
+        ValidationUtil.validateRequired(angle, "angle");
+        if (angle != 90 && angle != 180 && angle != 270 && angle != -90) {
+            throw new ClientException("ValidationError", "Angle must be 90, 180, 270 or -90");
+        }
+
+        // Get the file
+        File file = findFile(id, null);
+
+        // Check that the file is an image
+        if (!file.getMimeType().startsWith("image/")) {
+            throw new ClientException("ValidationError", "File is not an image");
+        }
+
+        // Get the creating user
+        UserDao userDao = new UserDao();
+        User user = userDao.getById(file.getUserId());
+
+        try {
+            // Get the stored file
+            java.nio.file.Path storedFile = DirectoryUtil.getStorageDirectory().resolve(id);
+            
+            // Decrypt the file
+            java.nio.file.Path unencryptedFile = EncryptionUtil.decryptFile(storedFile, user.getPrivateKey());
+            
+            // Read the image
+            BufferedImage image = ImageIO.read(unencryptedFile.toFile());
+            
+            // Rotate the image using our custom Scalr implementation that accepts an angle
+            BufferedImage rotatedImage = Scalr.rotate(image, (double) angle);
+            
+            // Write the rotated image to a temporary file with high quality
+            java.nio.file.Path rotatedFile = Files.createTempFile("rotation_", ".tmp");
+            
+            // Extract format name from MIME type
+            String formatName = file.getMimeType().substring(file.getMimeType().indexOf('/') + 1);
+            // Handle special cases for format names
+            if (formatName.equals("jpeg") || formatName.equals("jpg")) {
+                // For JPEG files, set compression quality to avoid quality loss
+                Iterator<ImageWriter> writers = ImageIO.getImageWritersByFormatName("jpeg");
+                if (writers.hasNext()) {
+                    ImageWriter writer = writers.next();
+                    ImageWriteParam imageWriteParam = writer.getDefaultWriteParam();
+                    
+                    // Set compression mode
+                    imageWriteParam.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
+                    // Set high quality compression (1.0 = highest quality)
+                    imageWriteParam.setCompressionQuality(0.95f);
+                    
+                    // Write the image
+                    try (ImageOutputStream outputStream = ImageIO.createImageOutputStream(rotatedFile.toFile())) {
+                        writer.setOutput(outputStream);
+                        IIOImage iioImage = new IIOImage(rotatedImage, null, null);
+                        writer.write(null, iioImage, imageWriteParam);
+                        writer.dispose();
+                    }
+                } else {
+                    // Fallback if no JPEG writer is available
+                    ImageIO.write(rotatedImage, "jpeg", rotatedFile.toFile());
+                }
+            } else {
+                // For other formats, use standard ImageIO.write
+                ImageIO.write(rotatedImage, formatName, rotatedFile.toFile());
+            }
+            
+            // Replace the original file with the rotated one
+            long fileSize = Files.size(rotatedFile);
+            FileUtil.createFile(file.getName(), file.getId(), rotatedFile, fileSize, null, principal.getId(), file.getDocumentId());
+            
+            // Clean up
+            Files.deleteIfExists(unencryptedFile);
+            Files.deleteIfExists(rotatedFile);
+            
+            // 删除旧的缩略图文件，强制系统重新生成
+            try {
+                Files.deleteIfExists(DirectoryUtil.getStorageDirectory().resolve(id + "_web"));
+                Files.deleteIfExists(DirectoryUtil.getStorageDirectory().resolve(id + "_thumb"));
+            } catch (Exception e) {
+                // 忽略删除缩略图时的错误
+                System.out.println("无法删除旧的缩略图: " + e.getMessage());
+            }
+            
+            // 触发文件处理事件，重新生成缩略图
+            FileUtil.startProcessingFile(id);
+            
+            // Raise a file updated event
+            FileUpdatedAsyncEvent event = new FileUpdatedAsyncEvent();
+            event.setUserId(principal.getId());
+            if (file.getDocumentId() != null) {
+                DocumentDao documentDao = new DocumentDao();
+                DocumentDto documentDto = documentDao.getDocument(file.getDocumentId(), PermType.READ, getTargetIdList(null));
+                if (documentDto != null) {
+                    event.setLanguage(documentDto.getLanguage());
+                }
+            }
+            event.setFileId(file.getId());
+            ThreadLocalContext.get().addAsyncEvent(event);
+            
+            if (file.getDocumentId() != null) {
+                // Raise a document updated event
+                DocumentUpdatedAsyncEvent documentEvent = new DocumentUpdatedAsyncEvent();
+                documentEvent.setUserId(principal.getId());
+                documentEvent.setDocumentId(file.getDocumentId());
+                ThreadLocalContext.get().addAsyncEvent(documentEvent);
+            }
+            
+            // Always return OK
+            JsonObjectBuilder response = Json.createObjectBuilder()
+                    .add("status", "ok")
+                    .add("id", file.getId())
+                    .add("size", fileSize);
+            return Response.ok().entity(response.build()).build();
+            
+        } catch (Exception e) {
+            throw new ServerException("RotationError", "Error rotating the file", e);
+        }
     }
 
     /**

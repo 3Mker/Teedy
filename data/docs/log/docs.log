@@ -1108,3 +1108,1326 @@ select urr1_0.URR_ID_C,urr1_0.URR_CREATEDATE_D,urr1_0.URR_EMAIL_C,urr1_0.URR_PAS
 13 5月 2025 01:36:37,131 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
 13 5月 2025 01:37:24,318 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
 13 5月 2025 01:37:24,318 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 5月 2025 02:30:46,954 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 02:30:50,640 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 5月 2025 02:30:50,642 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 5月 2025 02:30:50,642 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 5月 2025 02:30:50,642 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 02:30:51,412 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 5月 2025 02:30:51,430 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+13 5月 2025 02:30:51,481 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+13 5月 2025 02:30:51,487 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 5月 2025 02:30:51,489 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 5月 2025 02:30:51,489 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 5月 2025 02:30:51,616 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 5月 2025 02:30:51,617 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 5月 2025 02:31:33,610 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
+13 5月 2025 02:32:50,452 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 4b9cd432-99de-4560-8e98-eda1a58c5e31 
+13 5月 2025 02:32:50,457 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=4b9cd432-99de-4560-8e98-eda1a58c5e31, language=null} 
+13 5月 2025 02:32:50,503 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 7 classes for FormatHandler 
+13 5月 2025 02:32:50,860 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=4b9cd432-99de-4560-8e98-eda1a58c5e31, name=IMG_1449.jpeg} 
+13 5月 2025 02:32:50,860 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 0ms: 4b9cd432-99de-4560-8e98-eda1a58c5e31 
+13 5月 2025 02:32:50,913 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 4b9cd432-99de-4560-8e98-eda1a58c5e31 
+13 5月 2025 02:33:15,705 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=44e422b8-b87b-4c67-af94-369639fbf9b9} 
+13 5月 2025 02:33:15,746 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 4b9cd432-99de-4560-8e98-eda1a58c5e31 
+13 5月 2025 02:33:15,748 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=4b9cd432-99de-4560-8e98-eda1a58c5e31, language=eng} 
+13 5月 2025 02:33:15,748 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=44e422b8-b87b-4c67-af94-369639fbf9b9} 
+13 5月 2025 02:33:15,853 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=4b9cd432-99de-4560-8e98-eda1a58c5e31, name=IMG_1449.jpeg} 
+13 5月 2025 02:33:45,058 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=44e422b8-b87b-4c67-af94-369639fbf9b9} 
+13 5月 2025 02:33:52,573 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 36,720ms: 4b9cd432-99de-4560-8e98-eda1a58c5e31 
+13 5月 2025 02:33:52,590 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 4b9cd432-99de-4560-8e98-eda1a58c5e31 
+13 5月 2025 02:34:21,819 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 5月 2025 02:34:21,820 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 5月 2025 02:48:50,452 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 02:48:54,210 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 5月 2025 02:48:54,212 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 5月 2025 02:48:54,212 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 5月 2025 02:48:54,212 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 02:48:55,052 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 5月 2025 02:48:55,070 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+13 5月 2025 02:48:55,124 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+13 5月 2025 02:48:55,150 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 5月 2025 02:48:55,152 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 5月 2025 02:48:55,152 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 5月 2025 02:48:55,276 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 5月 2025 02:48:55,276 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 5月 2025 02:49:32,666 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 4b9cd432-99de-4560-8e98-eda1a58c5e31 
+13 5月 2025 02:49:32,669 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=4b9cd432-99de-4560-8e98-eda1a58c5e31, language=eng} 
+13 5月 2025 02:49:32,725 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 7 classes for FormatHandler 
+13 5月 2025 02:49:33,044 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=4b9cd432-99de-4560-8e98-eda1a58c5e31, name=IMG_1449.jpeg} 
+13 5月 2025 02:50:09,620 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 36,576ms: 4b9cd432-99de-4560-8e98-eda1a58c5e31 
+13 5月 2025 02:50:09,668 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 4b9cd432-99de-4560-8e98-eda1a58c5e31 
+13 5月 2025 02:52:48,575 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=44e422b8-b87b-4c67-af94-369639fbf9b9} 
+13 5月 2025 02:56:55,556 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 5月 2025 02:56:55,556 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 5月 2025 02:57:35,479 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 02:57:39,165 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 5月 2025 02:57:39,166 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 5月 2025 02:57:39,166 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 5月 2025 02:57:39,166 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 02:57:39,970 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 5月 2025 02:57:39,988 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+13 5月 2025 02:57:40,033 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+13 5月 2025 02:57:40,065 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 5月 2025 02:57:40,066 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 5月 2025 02:57:40,067 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 5月 2025 02:57:40,246 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 5月 2025 02:57:40,246 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 5月 2025 02:57:50,755 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=44e422b8-b87b-4c67-af94-369639fbf9b9} 
+13 5月 2025 03:00:56,197 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 5月 2025 03:00:56,197 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 5月 2025 03:01:25,476 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 03:01:29,141 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 5月 2025 03:01:29,143 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 5月 2025 03:01:29,143 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 5月 2025 03:01:29,143 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 03:01:29,926 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 5月 2025 03:01:29,945 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+13 5月 2025 03:01:29,998 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+13 5月 2025 03:01:30,023 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 5月 2025 03:01:30,025 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 5月 2025 03:01:30,025 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 5月 2025 03:01:30,170 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 5月 2025 03:01:30,170 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 5月 2025 03:01:54,110 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
+13 5月 2025 03:07:49,998 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 5月 2025 03:07:49,999 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 5月 2025 03:08:24,753 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 03:08:28,432 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 5月 2025 03:08:28,434 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 5月 2025 03:08:28,434 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 5月 2025 03:08:28,434 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 03:08:29,223 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 5月 2025 03:08:29,241 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+13 5月 2025 03:08:29,283 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+13 5月 2025 03:08:29,320 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 5月 2025 03:08:29,322 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 5月 2025 03:08:29,322 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 5月 2025 03:08:29,451 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 5月 2025 03:08:29,452 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 5月 2025 03:08:41,915 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=44e422b8-b87b-4c67-af94-369639fbf9b9} 
+13 5月 2025 03:08:58,032 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
+13 5月 2025 03:15:57,137 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 5月 2025 03:15:57,137 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 5月 2025 03:16:28,056 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 03:16:31,748 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 5月 2025 03:16:31,750 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 5月 2025 03:16:31,750 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 5月 2025 03:16:31,750 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 03:16:32,584 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 5月 2025 03:16:32,604 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+13 5月 2025 03:16:32,650 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+13 5月 2025 03:16:32,684 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 5月 2025 03:16:32,685 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 5月 2025 03:16:32,686 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 5月 2025 03:16:32,819 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 5月 2025 03:16:32,820 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 5月 2025 03:17:04,206 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 0029f7a1-f048-4b04-9886-b42f9c77f36c 
+13 5月 2025 03:17:04,210 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=0029f7a1-f048-4b04-9886-b42f9c77f36c, language=null} 
+13 5月 2025 03:17:04,210 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=4b9cd432-99de-4560-8e98-eda1a58c5e31, language=eng} 
+13 5月 2025 03:17:04,210 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=44e422b8-b87b-4c67-af94-369639fbf9b9} 
+13 5月 2025 03:17:04,211 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=44e422b8-b87b-4c67-af94-369639fbf9b9} 
+13 5月 2025 03:17:04,264 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 7 classes for FormatHandler 
+13 5月 2025 03:17:04,268 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=0029f7a1-f048-4b04-9886-b42f9c77f36c, name=IMG_1449.jpeg} 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/rotation_6464660388482963496.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:17:04,268 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=4b9cd432-99de-4560-8e98-eda1a58c5e31, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:17:04,272 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=0029f7a1-f048-4b04-9886-b42f9c77f36c, name=IMG_1449.jpeg} 
+13 5月 2025 03:17:04,272 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=4b9cd432-99de-4560-8e98-eda1a58c5e31, name=IMG_1449.jpeg} 
+13 5月 2025 03:17:04,272 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 0ms: 0029f7a1-f048-4b04-9886-b42f9c77f36c 
+13 5月 2025 03:17:04,272 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:180) Error extracting content from: File{id=4b9cd432-99de-4560-8e98-eda1a58c5e31, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.extractContent(ImageFormatHandler.java:53)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:178)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:17:04,276 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 4ms: 4b9cd432-99de-4560-8e98-eda1a58c5e31 
+13 5月 2025 03:17:04,309 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 0029f7a1-f048-4b04-9886-b42f9c77f36c 
+13 5月 2025 03:17:04,309 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 4b9cd432-99de-4560-8e98-eda1a58c5e31 
+13 5月 2025 03:17:06,280 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: e828da75-081a-447a-a625-71fbeb526f6d 
+13 5月 2025 03:17:06,283 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=e828da75-081a-447a-a625-71fbeb526f6d, language=null} 
+13 5月 2025 03:17:06,283 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=4b9cd432-99de-4560-8e98-eda1a58c5e31, language=eng} 
+13 5月 2025 03:17:06,283 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=44e422b8-b87b-4c67-af94-369639fbf9b9} 
+13 5月 2025 03:17:06,283 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=44e422b8-b87b-4c67-af94-369639fbf9b9} 
+13 5月 2025 03:17:06,285 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=e828da75-081a-447a-a625-71fbeb526f6d, name=IMG_1449.jpeg} 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/rotation_17722606935793465980.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:17:06,286 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=e828da75-081a-447a-a625-71fbeb526f6d, name=IMG_1449.jpeg} 
+13 5月 2025 03:17:06,286 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=4b9cd432-99de-4560-8e98-eda1a58c5e31, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:17:06,286 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 0ms: e828da75-081a-447a-a625-71fbeb526f6d 
+13 5月 2025 03:17:06,287 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=4b9cd432-99de-4560-8e98-eda1a58c5e31, name=IMG_1449.jpeg} 
+13 5月 2025 03:17:06,287 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:180) Error extracting content from: File{id=4b9cd432-99de-4560-8e98-eda1a58c5e31, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.extractContent(ImageFormatHandler.java:53)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:178)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:17:06,287 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 0ms: 4b9cd432-99de-4560-8e98-eda1a58c5e31 
+13 5月 2025 03:17:06,384 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 4b9cd432-99de-4560-8e98-eda1a58c5e31 
+13 5月 2025 03:17:06,415 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: e828da75-081a-447a-a625-71fbeb526f6d 
+13 5月 2025 03:17:07,092 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 8476de02-0cb7-47e9-80c9-e9e73135b0c8 
+13 5月 2025 03:17:07,098 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=44e422b8-b87b-4c67-af94-369639fbf9b9} 
+13 5月 2025 03:17:07,098 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=4b9cd432-99de-4560-8e98-eda1a58c5e31, language=eng} 
+13 5月 2025 03:17:07,098 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=8476de02-0cb7-47e9-80c9-e9e73135b0c8, language=null} 
+13 5月 2025 03:17:07,099 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=44e422b8-b87b-4c67-af94-369639fbf9b9} 
+13 5月 2025 03:17:07,101 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=8476de02-0cb7-47e9-80c9-e9e73135b0c8, name=IMG_1449.jpeg} 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/rotation_16099414748720543600.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:17:07,102 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=4b9cd432-99de-4560-8e98-eda1a58c5e31, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:17:07,102 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=8476de02-0cb7-47e9-80c9-e9e73135b0c8, name=IMG_1449.jpeg} 
+13 5月 2025 03:17:07,102 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=4b9cd432-99de-4560-8e98-eda1a58c5e31, name=IMG_1449.jpeg} 
+13 5月 2025 03:17:07,102 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 0ms: 8476de02-0cb7-47e9-80c9-e9e73135b0c8 
+13 5月 2025 03:17:07,102 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:180) Error extracting content from: File{id=4b9cd432-99de-4560-8e98-eda1a58c5e31, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.extractContent(ImageFormatHandler.java:53)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:178)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:17:07,103 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: 4b9cd432-99de-4560-8e98-eda1a58c5e31 
+13 5月 2025 03:17:07,166 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 4b9cd432-99de-4560-8e98-eda1a58c5e31 
+13 5月 2025 03:17:07,180 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 8476de02-0cb7-47e9-80c9-e9e73135b0c8 
+13 5月 2025 03:17:07,717 ERROR com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:52) Exception during file service iteration 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/sismics_docs3547039481888935179.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.implDelete(UnixFileSystemProvider.java:292)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1153)
+	at com.sismics.docs.core.service.FileService.deleteTemporaryFiles(FileService.java:62)
+	at com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:50)
+	at com.google.common.util.concurrent.AbstractScheduledService$ServiceDelegate$Task.run(AbstractScheduledService.java:233)
+	at com.google.common.util.concurrent.Callables.lambda$threadRenaming$3(Callables.java:103)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:17:12,723 ERROR com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:52) Exception during file service iteration 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/sismics_docs14184583658010273767.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.implDelete(UnixFileSystemProvider.java:292)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1153)
+	at com.sismics.docs.core.service.FileService.deleteTemporaryFiles(FileService.java:62)
+	at com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:50)
+	at com.google.common.util.concurrent.AbstractScheduledService$ServiceDelegate$Task.run(AbstractScheduledService.java:233)
+	at com.google.common.util.concurrent.Callables.lambda$threadRenaming$3(Callables.java:103)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:17:19,351 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=44e422b8-b87b-4c67-af94-369639fbf9b9} 
+13 5月 2025 03:17:46,598 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 9c69bb01-6def-4195-af29-3a7b1b6d5084 
+13 5月 2025 03:17:46,601 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=9c69bb01-6def-4195-af29-3a7b1b6d5084, language=null} 
+13 5月 2025 03:17:46,602 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=e828da75-081a-447a-a625-71fbeb526f6d, language=eng} 
+13 5月 2025 03:17:46,602 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=44e422b8-b87b-4c67-af94-369639fbf9b9} 
+13 5月 2025 03:17:46,602 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=44e422b8-b87b-4c67-af94-369639fbf9b9} 
+13 5月 2025 03:17:46,604 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=e828da75-081a-447a-a625-71fbeb526f6d, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:17:46,604 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=e828da75-081a-447a-a625-71fbeb526f6d, name=IMG_1449.jpeg} 
+13 5月 2025 03:17:46,604 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:180) Error extracting content from: File{id=e828da75-081a-447a-a625-71fbeb526f6d, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.extractContent(ImageFormatHandler.java:53)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:178)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:17:46,605 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: e828da75-081a-447a-a625-71fbeb526f6d 
+13 5月 2025 03:17:46,605 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=9c69bb01-6def-4195-af29-3a7b1b6d5084, name=IMG_1449.jpeg} 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/rotation_10647947082407753134.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:17:46,606 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=9c69bb01-6def-4195-af29-3a7b1b6d5084, name=IMG_1449.jpeg} 
+13 5月 2025 03:17:46,606 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 0ms: 9c69bb01-6def-4195-af29-3a7b1b6d5084 
+13 5月 2025 03:17:46,718 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 9c69bb01-6def-4195-af29-3a7b1b6d5084 
+13 5月 2025 03:17:46,738 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: e828da75-081a-447a-a625-71fbeb526f6d 
+13 5月 2025 03:18:05,865 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
+13 5月 2025 03:18:07,771 ERROR com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:52) Exception during file service iteration 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/sismics_docs16057494202034843235.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.implDelete(UnixFileSystemProvider.java:292)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1153)
+	at com.sismics.docs.core.service.FileService.deleteTemporaryFiles(FileService.java:62)
+	at com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:50)
+	at com.google.common.util.concurrent.AbstractScheduledService$ServiceDelegate$Task.run(AbstractScheduledService.java:233)
+	at com.google.common.util.concurrent.Callables.lambda$threadRenaming$3(Callables.java:103)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:18:12,778 ERROR com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:52) Exception during file service iteration 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/sismics_docs12732272529965987973.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.implDelete(UnixFileSystemProvider.java:292)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1153)
+	at com.sismics.docs.core.service.FileService.deleteTemporaryFiles(FileService.java:62)
+	at com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:50)
+	at com.google.common.util.concurrent.AbstractScheduledService$ServiceDelegate$Task.run(AbstractScheduledService.java:233)
+	at com.google.common.util.concurrent.Callables.lambda$threadRenaming$3(Callables.java:103)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:18:20,867 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 5ad648d1-2057-4af9-8729-620fd6b0541d 
+13 5月 2025 03:18:20,869 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=5ad648d1-2057-4af9-8729-620fd6b0541d, language=null} 
+13 5月 2025 03:18:20,970 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=5ad648d1-2057-4af9-8729-620fd6b0541d, name=IMG_1449.jpeg} 
+13 5月 2025 03:18:20,970 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 0ms: 5ad648d1-2057-4af9-8729-620fd6b0541d 
+13 5月 2025 03:18:21,059 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 5ad648d1-2057-4af9-8729-620fd6b0541d 
+13 5月 2025 03:18:36,505 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=6a07646d-75e0-4b5a-ab17-e839a1af05da} 
+13 5月 2025 03:18:36,539 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 5ad648d1-2057-4af9-8729-620fd6b0541d 
+13 5月 2025 03:18:36,545 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=5ad648d1-2057-4af9-8729-620fd6b0541d, language=eng} 
+13 5月 2025 03:18:36,545 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=6a07646d-75e0-4b5a-ab17-e839a1af05da} 
+13 5月 2025 03:18:36,674 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=5ad648d1-2057-4af9-8729-620fd6b0541d, name=IMG_1449.jpeg} 
+13 5月 2025 03:19:15,298 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 38,624ms: 5ad648d1-2057-4af9-8729-620fd6b0541d 
+13 5月 2025 03:19:15,314 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 5ad648d1-2057-4af9-8729-620fd6b0541d 
+13 5月 2025 03:20:02,813 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: a4e897af-b0d0-41b4-8c01-72464576a623 
+13 5月 2025 03:20:02,817 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=a4e897af-b0d0-41b4-8c01-72464576a623, language=null} 
+13 5月 2025 03:20:02,817 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=6a07646d-75e0-4b5a-ab17-e839a1af05da} 
+13 5月 2025 03:20:02,817 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=5ad648d1-2057-4af9-8729-620fd6b0541d, language=eng} 
+13 5月 2025 03:20:02,817 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=6a07646d-75e0-4b5a-ab17-e839a1af05da} 
+13 5月 2025 03:20:02,819 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=a4e897af-b0d0-41b4-8c01-72464576a623, name=IMG_1449.jpeg} 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/rotation_17536495600303317560.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:20:02,820 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=a4e897af-b0d0-41b4-8c01-72464576a623, name=IMG_1449.jpeg} 
+13 5月 2025 03:20:02,820 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 0ms: a4e897af-b0d0-41b4-8c01-72464576a623 
+13 5月 2025 03:20:02,821 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=5ad648d1-2057-4af9-8729-620fd6b0541d, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:20:02,822 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=5ad648d1-2057-4af9-8729-620fd6b0541d, name=IMG_1449.jpeg} 
+13 5月 2025 03:20:02,822 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:180) Error extracting content from: File{id=5ad648d1-2057-4af9-8729-620fd6b0541d, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.extractContent(ImageFormatHandler.java:53)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:178)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:20:02,823 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: 5ad648d1-2057-4af9-8729-620fd6b0541d 
+13 5月 2025 03:20:03,018 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 5ad648d1-2057-4af9-8729-620fd6b0541d 
+13 5月 2025 03:20:03,108 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: a4e897af-b0d0-41b4-8c01-72464576a623 
+13 5月 2025 03:22:22,567 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 2f01c42c-76ee-4bc4-acd0-239a63efcc2d 
+13 5月 2025 03:22:22,569 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=2f01c42c-76ee-4bc4-acd0-239a63efcc2d, language=null} 
+13 5月 2025 03:22:22,569 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=a4e897af-b0d0-41b4-8c01-72464576a623, language=eng} 
+13 5月 2025 03:22:22,569 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=6a07646d-75e0-4b5a-ab17-e839a1af05da} 
+13 5月 2025 03:22:22,569 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=6a07646d-75e0-4b5a-ab17-e839a1af05da} 
+13 5月 2025 03:22:22,571 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=2f01c42c-76ee-4bc4-acd0-239a63efcc2d, name=IMG_1449.jpeg} 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/rotation_2629261821437028669.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:22:22,571 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=2f01c42c-76ee-4bc4-acd0-239a63efcc2d, name=IMG_1449.jpeg} 
+13 5月 2025 03:22:22,571 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=a4e897af-b0d0-41b4-8c01-72464576a623, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:22:22,571 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 0ms: 2f01c42c-76ee-4bc4-acd0-239a63efcc2d 
+13 5月 2025 03:22:22,571 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=a4e897af-b0d0-41b4-8c01-72464576a623, name=IMG_1449.jpeg} 
+13 5月 2025 03:22:22,572 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:180) Error extracting content from: File{id=a4e897af-b0d0-41b4-8c01-72464576a623, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.extractContent(ImageFormatHandler.java:53)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:178)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:22:22,572 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: a4e897af-b0d0-41b4-8c01-72464576a623 
+13 5月 2025 03:22:22,746 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 2f01c42c-76ee-4bc4-acd0-239a63efcc2d 
+13 5月 2025 03:22:22,874 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: a4e897af-b0d0-41b4-8c01-72464576a623 
+13 5月 2025 03:22:25,487 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 1eeae7bd-8363-463f-9e5d-270ae4fe37b2 
+13 5月 2025 03:22:25,489 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=1eeae7bd-8363-463f-9e5d-270ae4fe37b2, language=null} 
+13 5月 2025 03:22:25,489 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=6a07646d-75e0-4b5a-ab17-e839a1af05da} 
+13 5月 2025 03:22:25,489 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=6a07646d-75e0-4b5a-ab17-e839a1af05da} 
+13 5月 2025 03:22:25,489 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=a4e897af-b0d0-41b4-8c01-72464576a623, language=eng} 
+13 5月 2025 03:22:25,491 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=1eeae7bd-8363-463f-9e5d-270ae4fe37b2, name=IMG_1449.jpeg} 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/rotation_2745709104194932711.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:22:25,491 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=1eeae7bd-8363-463f-9e5d-270ae4fe37b2, name=IMG_1449.jpeg} 
+13 5月 2025 03:22:25,492 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: 1eeae7bd-8363-463f-9e5d-270ae4fe37b2 
+13 5月 2025 03:22:25,492 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=a4e897af-b0d0-41b4-8c01-72464576a623, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:22:25,493 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=a4e897af-b0d0-41b4-8c01-72464576a623, name=IMG_1449.jpeg} 
+13 5月 2025 03:22:25,493 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:180) Error extracting content from: File{id=a4e897af-b0d0-41b4-8c01-72464576a623, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.extractContent(ImageFormatHandler.java:53)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:178)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:22:25,494 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 2ms: a4e897af-b0d0-41b4-8c01-72464576a623 
+13 5月 2025 03:22:25,527 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: a4e897af-b0d0-41b4-8c01-72464576a623 
+13 5月 2025 03:22:25,645 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 1eeae7bd-8363-463f-9e5d-270ae4fe37b2 
+13 5月 2025 03:22:26,099 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: b51d256b-391b-448d-8828-d1f128c09e2a 
+13 5月 2025 03:22:26,103 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=b51d256b-391b-448d-8828-d1f128c09e2a, language=null} 
+13 5月 2025 03:22:26,103 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=a4e897af-b0d0-41b4-8c01-72464576a623, language=eng} 
+13 5月 2025 03:22:26,103 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=6a07646d-75e0-4b5a-ab17-e839a1af05da} 
+13 5月 2025 03:22:26,104 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=6a07646d-75e0-4b5a-ab17-e839a1af05da} 
+13 5月 2025 03:22:26,107 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=a4e897af-b0d0-41b4-8c01-72464576a623, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:22:26,107 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=b51d256b-391b-448d-8828-d1f128c09e2a, name=IMG_1449.jpeg} 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/rotation_6990128011445328091.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:22:26,107 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=a4e897af-b0d0-41b4-8c01-72464576a623, name=IMG_1449.jpeg} 
+13 5月 2025 03:22:26,108 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=b51d256b-391b-448d-8828-d1f128c09e2a, name=IMG_1449.jpeg} 
+13 5月 2025 03:22:26,108 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:180) Error extracting content from: File{id=a4e897af-b0d0-41b4-8c01-72464576a623, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.extractContent(ImageFormatHandler.java:53)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:178)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:22:26,108 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 0ms: b51d256b-391b-448d-8828-d1f128c09e2a 
+13 5月 2025 03:22:26,108 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: a4e897af-b0d0-41b4-8c01-72464576a623 
+13 5月 2025 03:22:26,370 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: b51d256b-391b-448d-8828-d1f128c09e2a 
+13 5月 2025 03:22:26,467 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: a4e897af-b0d0-41b4-8c01-72464576a623 
+13 5月 2025 03:22:27,988 ERROR com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:52) Exception during file service iteration 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/sismics_docs18162852999830068354.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.implDelete(UnixFileSystemProvider.java:292)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1153)
+	at com.sismics.docs.core.service.FileService.deleteTemporaryFiles(FileService.java:62)
+	at com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:50)
+	at com.google.common.util.concurrent.AbstractScheduledService$ServiceDelegate$Task.run(AbstractScheduledService.java:233)
+	at com.google.common.util.concurrent.Callables.lambda$threadRenaming$3(Callables.java:103)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:22:32,995 ERROR com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:52) Exception during file service iteration 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/sismics_docs17802439173402882816.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.implDelete(UnixFileSystemProvider.java:292)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1153)
+	at com.sismics.docs.core.service.FileService.deleteTemporaryFiles(FileService.java:62)
+	at com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:50)
+	at com.google.common.util.concurrent.AbstractScheduledService$ServiceDelegate$Task.run(AbstractScheduledService.java:233)
+	at com.google.common.util.concurrent.Callables.lambda$threadRenaming$3(Callables.java:103)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:24:25,743 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 5月 2025 03:24:25,744 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 5月 2025 03:25:05,061 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 03:25:08,735 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 5月 2025 03:25:08,737 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 5月 2025 03:25:08,737 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 5月 2025 03:25:08,737 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 03:25:09,521 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 5月 2025 03:25:09,539 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+13 5月 2025 03:25:09,591 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+13 5月 2025 03:25:09,621 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 5月 2025 03:25:09,622 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 5月 2025 03:25:09,622 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 5月 2025 03:25:09,755 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 5月 2025 03:25:09,755 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 5月 2025 03:25:46,071 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 807218bc-cf45-4662-b874-3f3eaabed539 
+13 5月 2025 03:25:46,076 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=807218bc-cf45-4662-b874-3f3eaabed539, language=null} 
+13 5月 2025 03:25:46,136 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 7 classes for FormatHandler 
+13 5月 2025 03:25:46,740 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=807218bc-cf45-4662-b874-3f3eaabed539, name=IMG_1444.png} 
+13 5月 2025 03:25:46,741 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: 807218bc-cf45-4662-b874-3f3eaabed539 
+13 5月 2025 03:25:46,869 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 807218bc-cf45-4662-b874-3f3eaabed539 
+13 5月 2025 03:26:08,671 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=d43be4b6-f984-4158-adc8-402ec81021fd} 
+13 5月 2025 03:26:08,824 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 807218bc-cf45-4662-b874-3f3eaabed539 
+13 5月 2025 03:26:08,826 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=807218bc-cf45-4662-b874-3f3eaabed539, language=eng} 
+13 5月 2025 03:26:08,826 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=d43be4b6-f984-4158-adc8-402ec81021fd} 
+13 5月 2025 03:26:09,313 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=807218bc-cf45-4662-b874-3f3eaabed539, name=IMG_1444.png} 
+13 5月 2025 03:26:27,140 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 17,827ms: 807218bc-cf45-4662-b874-3f3eaabed539 
+13 5月 2025 03:26:27,158 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 807218bc-cf45-4662-b874-3f3eaabed539 
+13 5月 2025 03:26:35,603 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=d43be4b6-f984-4158-adc8-402ec81021fd} 
+13 5月 2025 03:26:38,111 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 4e982e6f-7edc-4007-bdab-8304c0eb19ca 
+13 5月 2025 03:26:38,113 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=4e982e6f-7edc-4007-bdab-8304c0eb19ca, language=null} 
+13 5月 2025 03:26:38,113 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=d43be4b6-f984-4158-adc8-402ec81021fd} 
+13 5月 2025 03:26:38,113 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=807218bc-cf45-4662-b874-3f3eaabed539, language=eng} 
+13 5月 2025 03:26:38,114 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=d43be4b6-f984-4158-adc8-402ec81021fd} 
+13 5月 2025 03:26:38,115 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=4e982e6f-7edc-4007-bdab-8304c0eb19ca, name=IMG_1444.png} 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/rotation_2619188831604409568.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:26:38,115 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=807218bc-cf45-4662-b874-3f3eaabed539, name=IMG_1444.png} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:26:38,117 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=4e982e6f-7edc-4007-bdab-8304c0eb19ca, name=IMG_1444.png} 
+13 5月 2025 03:26:38,118 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=807218bc-cf45-4662-b874-3f3eaabed539, name=IMG_1444.png} 
+13 5月 2025 03:26:38,118 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: 4e982e6f-7edc-4007-bdab-8304c0eb19ca 
+13 5月 2025 03:26:38,118 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:180) Error extracting content from: File{id=807218bc-cf45-4662-b874-3f3eaabed539, name=IMG_1444.png} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.extractContent(ImageFormatHandler.java:53)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:178)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:26:38,119 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: 807218bc-cf45-4662-b874-3f3eaabed539 
+13 5月 2025 03:26:38,338 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 807218bc-cf45-4662-b874-3f3eaabed539 
+13 5月 2025 03:26:38,447 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 4e982e6f-7edc-4007-bdab-8304c0eb19ca 
+13 5月 2025 03:26:46,566 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 304c9799-26e0-4bc5-8bcb-ea845efddce4 
+13 5月 2025 03:26:46,568 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=304c9799-26e0-4bc5-8bcb-ea845efddce4, language=null} 
+13 5月 2025 03:26:46,568 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=d43be4b6-f984-4158-adc8-402ec81021fd} 
+13 5月 2025 03:26:46,568 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=4e982e6f-7edc-4007-bdab-8304c0eb19ca, language=eng} 
+13 5月 2025 03:26:46,569 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=d43be4b6-f984-4158-adc8-402ec81021fd} 
+13 5月 2025 03:26:46,570 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=304c9799-26e0-4bc5-8bcb-ea845efddce4, name=IMG_1444.png} 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/rotation_10194197359715474902.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:26:46,571 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=304c9799-26e0-4bc5-8bcb-ea845efddce4, name=IMG_1444.png} 
+13 5月 2025 03:26:46,571 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 0ms: 304c9799-26e0-4bc5-8bcb-ea845efddce4 
+13 5月 2025 03:26:46,571 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=4e982e6f-7edc-4007-bdab-8304c0eb19ca, name=IMG_1444.png} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:26:46,571 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=4e982e6f-7edc-4007-bdab-8304c0eb19ca, name=IMG_1444.png} 
+13 5月 2025 03:26:46,571 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:180) Error extracting content from: File{id=4e982e6f-7edc-4007-bdab-8304c0eb19ca, name=IMG_1444.png} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.extractContent(ImageFormatHandler.java:53)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:178)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:26:46,572 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: 4e982e6f-7edc-4007-bdab-8304c0eb19ca 
+13 5月 2025 03:26:46,826 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 4e982e6f-7edc-4007-bdab-8304c0eb19ca 
+13 5月 2025 03:26:46,878 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 304c9799-26e0-4bc5-8bcb-ea845efddce4 
+13 5月 2025 03:27:23,983 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
+13 5月 2025 03:27:24,727 ERROR com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:52) Exception during file service iteration 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/sismics_docs6030847179546161922.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.implDelete(UnixFileSystemProvider.java:292)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1153)
+	at com.sismics.docs.core.service.FileService.deleteTemporaryFiles(FileService.java:62)
+	at com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:50)
+	at com.google.common.util.concurrent.AbstractScheduledService$ServiceDelegate$Task.run(AbstractScheduledService.java:233)
+	at com.google.common.util.concurrent.Callables.lambda$threadRenaming$3(Callables.java:103)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:27:29,734 ERROR com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:52) Exception during file service iteration 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/sismics_docs10737390387239023486.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.implDelete(UnixFileSystemProvider.java:292)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1153)
+	at com.sismics.docs.core.service.FileService.deleteTemporaryFiles(FileService.java:62)
+	at com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:50)
+	at com.google.common.util.concurrent.AbstractScheduledService$ServiceDelegate$Task.run(AbstractScheduledService.java:233)
+	at com.google.common.util.concurrent.Callables.lambda$threadRenaming$3(Callables.java:103)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:27:33,121 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: f5ea446a-9965-4a61-80ca-44c299ae0a85 
+13 5月 2025 03:27:33,125 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=f5ea446a-9965-4a61-80ca-44c299ae0a85, language=null} 
+13 5月 2025 03:27:33,246 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=f5ea446a-9965-4a61-80ca-44c299ae0a85, name=IMG_1449.jpeg} 
+13 5月 2025 03:27:33,247 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: f5ea446a-9965-4a61-80ca-44c299ae0a85 
+13 5月 2025 03:27:33,275 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: f5ea446a-9965-4a61-80ca-44c299ae0a85 
+13 5月 2025 03:27:45,954 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=570f1306-ce0d-4b77-821e-d6629022b89c} 
+13 5月 2025 03:27:45,988 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: f5ea446a-9965-4a61-80ca-44c299ae0a85 
+13 5月 2025 03:27:45,993 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=f5ea446a-9965-4a61-80ca-44c299ae0a85, language=eng} 
+13 5月 2025 03:27:45,993 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=570f1306-ce0d-4b77-821e-d6629022b89c} 
+13 5月 2025 03:27:46,252 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=f5ea446a-9965-4a61-80ca-44c299ae0a85, name=IMG_1449.jpeg} 
+13 5月 2025 03:28:22,340 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: d4c2820c-5d39-48a6-b525-b156840b7ab9 
+13 5月 2025 03:28:22,343 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=d4c2820c-5d39-48a6-b525-b156840b7ab9, language=null} 
+13 5月 2025 03:28:22,343 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=f5ea446a-9965-4a61-80ca-44c299ae0a85, language=eng} 
+13 5月 2025 03:28:22,343 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=570f1306-ce0d-4b77-821e-d6629022b89c} 
+13 5月 2025 03:28:22,343 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=570f1306-ce0d-4b77-821e-d6629022b89c} 
+13 5月 2025 03:28:22,346 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=f5ea446a-9965-4a61-80ca-44c299ae0a85, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:28:22,347 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=f5ea446a-9965-4a61-80ca-44c299ae0a85, name=IMG_1449.jpeg} 
+13 5月 2025 03:28:22,347 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:180) Error extracting content from: File{id=f5ea446a-9965-4a61-80ca-44c299ae0a85, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.extractContent(ImageFormatHandler.java:53)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:178)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:28:22,348 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: f5ea446a-9965-4a61-80ca-44c299ae0a85 
+13 5月 2025 03:28:22,347 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=d4c2820c-5d39-48a6-b525-b156840b7ab9, name=IMG_1449.jpeg} 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/rotation_9784592144616653603.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:28:22,348 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=d4c2820c-5d39-48a6-b525-b156840b7ab9, name=IMG_1449.jpeg} 
+13 5月 2025 03:28:22,349 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: d4c2820c-5d39-48a6-b525-b156840b7ab9 
+13 5月 2025 03:28:22,623 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: d4c2820c-5d39-48a6-b525-b156840b7ab9 
+13 5月 2025 03:28:22,777 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: f5ea446a-9965-4a61-80ca-44c299ae0a85 
+13 5月 2025 03:28:24,318 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 38,066ms: f5ea446a-9965-4a61-80ca-44c299ae0a85 
+13 5月 2025 03:28:24,331 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: f5ea446a-9965-4a61-80ca-44c299ae0a85 
+13 5月 2025 03:28:28,210 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=570f1306-ce0d-4b77-821e-d6629022b89c} 
+13 5月 2025 03:30:45,850 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=21871045-d714-4621-ad9a-383c63a1bf28} 
+13 5月 2025 03:30:45,900 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 6fdf65cc-c03f-4220-a1e4-3055e6a7c580 
+13 5月 2025 03:30:45,908 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=6fdf65cc-c03f-4220-a1e4-3055e6a7c580, language=eng} 
+13 5月 2025 03:30:45,908 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=21871045-d714-4621-ad9a-383c63a1bf28} 
+13 5月 2025 03:30:46,053 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=6fdf65cc-c03f-4220-a1e4-3055e6a7c580, name=IMG_1449.jpeg} 
+13 5月 2025 03:31:23,118 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 37,065ms: 6fdf65cc-c03f-4220-a1e4-3055e6a7c580 
+13 5月 2025 03:31:23,135 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 6fdf65cc-c03f-4220-a1e4-3055e6a7c580 
+13 5月 2025 03:31:47,740 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 5月 2025 03:31:47,741 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 5月 2025 03:32:16,067 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 03:32:19,751 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 5月 2025 03:32:19,752 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 5月 2025 03:32:19,753 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 5月 2025 03:32:19,753 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 03:32:20,530 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 5月 2025 03:32:20,550 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+13 5月 2025 03:32:20,587 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+13 5月 2025 03:32:20,625 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 5月 2025 03:32:20,634 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 5月 2025 03:32:20,635 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 5月 2025 03:32:20,768 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 5月 2025 03:32:20,768 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 5月 2025 03:32:57,311 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=b8f01619-7983-42e9-a720-2b41ba2b37eb} 
+13 5月 2025 03:32:57,456 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 8ac6de1e-c443-4859-a44d-e089641306a9 
+13 5月 2025 03:32:57,461 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=8ac6de1e-c443-4859-a44d-e089641306a9, language=eng} 
+13 5月 2025 03:32:57,461 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=b8f01619-7983-42e9-a720-2b41ba2b37eb} 
+13 5月 2025 03:32:57,530 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 7 classes for FormatHandler 
+13 5月 2025 03:32:57,872 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=8ac6de1e-c443-4859-a44d-e089641306a9, name=IMG_1449.jpeg} 
+13 5月 2025 03:33:04,837 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 40754d1b-bda3-4c5f-8014-f27e16e7b198 
+13 5月 2025 03:33:04,839 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=40754d1b-bda3-4c5f-8014-f27e16e7b198, language=null} 
+13 5月 2025 03:33:04,839 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=b8f01619-7983-42e9-a720-2b41ba2b37eb} 
+13 5月 2025 03:33:04,840 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=8ac6de1e-c443-4859-a44d-e089641306a9, language=eng} 
+13 5月 2025 03:33:04,841 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=b8f01619-7983-42e9-a720-2b41ba2b37eb} 
+13 5月 2025 03:33:04,842 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=40754d1b-bda3-4c5f-8014-f27e16e7b198, name=IMG_1449.jpeg} 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/rotation_1070439368099645181.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:33:04,842 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=8ac6de1e-c443-4859-a44d-e089641306a9, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:33:04,846 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=40754d1b-bda3-4c5f-8014-f27e16e7b198, name=IMG_1449.jpeg} 
+13 5月 2025 03:33:04,847 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: 40754d1b-bda3-4c5f-8014-f27e16e7b198 
+13 5月 2025 03:33:04,847 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=8ac6de1e-c443-4859-a44d-e089641306a9, name=IMG_1449.jpeg} 
+13 5月 2025 03:33:04,848 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:180) Error extracting content from: File{id=8ac6de1e-c443-4859-a44d-e089641306a9, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.extractContent(ImageFormatHandler.java:53)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:178)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:33:04,849 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 2ms: 8ac6de1e-c443-4859-a44d-e089641306a9 
+13 5月 2025 03:33:05,120 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 40754d1b-bda3-4c5f-8014-f27e16e7b198 
+13 5月 2025 03:33:05,272 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 8ac6de1e-c443-4859-a44d-e089641306a9 
+13 5月 2025 03:33:10,665 ERROR com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:52) Exception during file service iteration 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/sismics_docs14668427793982109796.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.implDelete(UnixFileSystemProvider.java:292)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1153)
+	at com.sismics.docs.core.service.FileService.deleteTemporaryFiles(FileService.java:62)
+	at com.sismics.docs.core.service.FileService.runOneIteration(FileService.java:50)
+	at com.google.common.util.concurrent.AbstractScheduledService$ServiceDelegate$Task.run(AbstractScheduledService.java:233)
+	at com.google.common.util.concurrent.Callables.lambda$threadRenaming$3(Callables.java:103)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:33:35,922 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 38,050ms: 8ac6de1e-c443-4859-a44d-e089641306a9 
+13 5月 2025 03:33:36,009 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 8ac6de1e-c443-4859-a44d-e089641306a9 
+13 5月 2025 03:34:03,889 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 9d8dc62f-922c-438e-b0a6-41dbbc9d6c2e 
+13 5月 2025 03:34:03,891 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=9d8dc62f-922c-438e-b0a6-41dbbc9d6c2e, language=null} 
+13 5月 2025 03:34:03,891 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=6fdf65cc-c03f-4220-a1e4-3055e6a7c580, language=eng} 
+13 5月 2025 03:34:03,891 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=21871045-d714-4621-ad9a-383c63a1bf28} 
+13 5月 2025 03:34:03,892 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=21871045-d714-4621-ad9a-383c63a1bf28} 
+13 5月 2025 03:34:03,894 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=9d8dc62f-922c-438e-b0a6-41dbbc9d6c2e, name=IMG_1449.jpeg} 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/rotation_6150354693775017287.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:34:03,894 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=6fdf65cc-c03f-4220-a1e4-3055e6a7c580, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:34:03,895 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=6fdf65cc-c03f-4220-a1e4-3055e6a7c580, name=IMG_1449.jpeg} 
+13 5月 2025 03:34:03,895 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:180) Error extracting content from: File{id=6fdf65cc-c03f-4220-a1e4-3055e6a7c580, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.extractContent(ImageFormatHandler.java:53)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:178)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:34:03,895 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 0ms: 6fdf65cc-c03f-4220-a1e4-3055e6a7c580 
+13 5月 2025 03:34:03,895 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=9d8dc62f-922c-438e-b0a6-41dbbc9d6c2e, name=IMG_1449.jpeg} 
+13 5月 2025 03:34:03,896 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: 9d8dc62f-922c-438e-b0a6-41dbbc9d6c2e 
+13 5月 2025 03:34:03,961 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 6fdf65cc-c03f-4220-a1e4-3055e6a7c580 
+13 5月 2025 03:34:03,975 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 9d8dc62f-922c-438e-b0a6-41dbbc9d6c2e 
+13 5月 2025 03:34:09,093 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=21871045-d714-4621-ad9a-383c63a1bf28} 
+13 5月 2025 03:36:26,276 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 5月 2025 03:36:26,277 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 5月 2025 03:36:45,778 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 03:36:49,525 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 5月 2025 03:36:49,526 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 5月 2025 03:36:49,526 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 5月 2025 03:36:49,527 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+13 5月 2025 03:36:50,327 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 5月 2025 03:36:50,346 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+13 5月 2025 03:36:50,390 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+13 5月 2025 03:36:50,437 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 5月 2025 03:36:50,438 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 5月 2025 03:36:50,438 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 5月 2025 03:36:50,579 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 5月 2025 03:36:50,580 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 5月 2025 03:37:26,090 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=894ee1e8-f170-49f9-94f2-20039d16b871} 
+13 5月 2025 03:37:26,257 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: b0d91942-93ac-40ce-9ee8-969790fe6d8a 
+13 5月 2025 03:37:26,266 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=b0d91942-93ac-40ce-9ee8-969790fe6d8a, language=eng} 
+13 5月 2025 03:37:26,266 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=894ee1e8-f170-49f9-94f2-20039d16b871} 
+13 5月 2025 03:37:26,337 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 7 classes for FormatHandler 
+13 5月 2025 03:37:26,725 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=b0d91942-93ac-40ce-9ee8-969790fe6d8a, name=IMG_1449.jpeg} 
+13 5月 2025 03:37:28,770 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 2,045ms: b0d91942-93ac-40ce-9ee8-969790fe6d8a 
+13 5月 2025 03:37:28,918 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: b0d91942-93ac-40ce-9ee8-969790fe6d8a 
+13 5月 2025 03:37:29,300 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=894ee1e8-f170-49f9-94f2-20039d16b871} 
+13 5月 2025 03:37:41,215 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: ab928942-2178-4d18-8e79-528b6f193ee6 
+13 5月 2025 03:37:41,216 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: b0d91942-93ac-40ce-9ee8-969790fe6d8a 
+13 5月 2025 03:37:41,219 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=ab928942-2178-4d18-8e79-528b6f193ee6, language=null} 
+13 5月 2025 03:37:41,219 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=894ee1e8-f170-49f9-94f2-20039d16b871} 
+13 5月 2025 03:37:41,219 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=894ee1e8-f170-49f9-94f2-20039d16b871} 
+13 5月 2025 03:37:41,219 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=b0d91942-93ac-40ce-9ee8-969790fe6d8a, language=eng} 
+13 5月 2025 03:37:41,222 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=b0d91942-93ac-40ce-9ee8-969790fe6d8a, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:37:41,223 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=ab928942-2178-4d18-8e79-528b6f193ee6, name=IMG_1449.jpeg} 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/rotation_7805837228553395816.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:37:41,228 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=ab928942-2178-4d18-8e79-528b6f193ee6, name=IMG_1449.jpeg} 
+13 5月 2025 03:37:41,228 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 0ms: ab928942-2178-4d18-8e79-528b6f193ee6 
+13 5月 2025 03:37:41,227 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=b0d91942-93ac-40ce-9ee8-969790fe6d8a, name=IMG_1449.jpeg} 
+13 5月 2025 03:37:41,228 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:180) Error extracting content from: File{id=b0d91942-93ac-40ce-9ee8-969790fe6d8a, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.extractContent(ImageFormatHandler.java:53)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:178)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:37:41,229 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 2ms: b0d91942-93ac-40ce-9ee8-969790fe6d8a 
+13 5月 2025 03:37:41,436 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: b0d91942-93ac-40ce-9ee8-969790fe6d8a 
+13 5月 2025 03:37:41,474 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: ab928942-2178-4d18-8e79-528b6f193ee6 
+13 5月 2025 03:38:41,663 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: b7e9c2ac-f050-4d1f-96ea-84a230584580 
+13 5月 2025 03:38:41,664 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: ab928942-2178-4d18-8e79-528b6f193ee6 
+13 5月 2025 03:38:41,665 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=b7e9c2ac-f050-4d1f-96ea-84a230584580, language=null} 
+13 5月 2025 03:38:41,665 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=ab928942-2178-4d18-8e79-528b6f193ee6, language=eng} 
+13 5月 2025 03:38:41,665 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=894ee1e8-f170-49f9-94f2-20039d16b871} 
+13 5月 2025 03:38:41,666 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=894ee1e8-f170-49f9-94f2-20039d16b871} 
+13 5月 2025 03:38:41,667 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=b7e9c2ac-f050-4d1f-96ea-84a230584580, name=IMG_1449.jpeg} 
+java.nio.file.NoSuchFileException: /var/folders/rp/_b5hgdk52rx7m41r6_grk5440000gn/T/rotation_15244369277222866065.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:38:41,667 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=ab928942-2178-4d18-8e79-528b6f193ee6, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.generateThumbnail(ImageFormatHandler.java:42)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:38:41,667 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=b7e9c2ac-f050-4d1f-96ea-84a230584580, name=IMG_1449.jpeg} 
+13 5月 2025 03:38:41,668 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: b7e9c2ac-f050-4d1f-96ea-84a230584580 
+13 5月 2025 03:38:41,668 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=ab928942-2178-4d18-8e79-528b6f193ee6, name=IMG_1449.jpeg} 
+13 5月 2025 03:38:41,668 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:180) Error extracting content from: File{id=ab928942-2178-4d18-8e79-528b6f193ee6, name=IMG_1449.jpeg} 
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at com.sismics.docs.core.util.format.ImageFormatHandler.extractContent(ImageFormatHandler.java:53)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:178)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:85)
+	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+13 5月 2025 03:38:41,668 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 0ms: ab928942-2178-4d18-8e79-528b6f193ee6 
+13 5月 2025 03:38:41,808 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: ab928942-2178-4d18-8e79-528b6f193ee6 
+13 5月 2025 03:38:41,922 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: b7e9c2ac-f050-4d1f-96ea-84a230584580 
+13 5月 2025 03:39:21,199 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 5月 2025 03:39:21,200 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
