@@ -75,4 +75,9 @@ angular.module('docs').controller('Login', function(Restangular, $scope, $rootSc
       });
     });
   };
+
+  // Open registration page
+  $scope.openRegistration = function () {
+    $state.go('registration');
+  };
 });

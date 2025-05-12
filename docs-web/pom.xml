@@ -26,6 +26,13 @@
       <artifactId>docs-web-common</artifactId>
     </dependency>
     
+    <!-- JSON Library -->
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20231013</version>
+    </dependency>
+    
     <!-- Dependencies to Jersey -->
     <dependency>
       <groupId>org.glassfish.jersey.containers</groupId>

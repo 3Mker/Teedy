@@ -1,0 +1,94 @@
+<style>
+  /* No navbar in registration screen */
+  .navbar {
+    display: none;
+  }
+
+  /* Absolute positionned footer on top of the login background */
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    .footer {
+      width: 50%;
+    }
+  }
+
+  /* Smaller links everywhere on login */
+  a {
+    font-size: 90%;
+    color: #666;
+  }
+</style>
+<div class="row vertical-center">
+  <div class="col-sm-6 col-xs-12 login-box">
+    <div class="row">
+      <div class="col-lg-offset-3 col-lg-6 col-xs-offset-1 col-xs-10">
+        <img src="img/title.png" class="img-responsive" />
+        
+        <div uib-alert ng-repeat="alert in alerts" ng-class="'alert-' + alert.type" close="closeAlert($index)">{{ alert.msg }}</div>
+
+        <form name="registrationForm" role="form">
+          <h3 class="text-center">{{ 'registration.title' | translate }}</h3>
+          <p class="text-muted text-center">{{ 'registration.subtitle' | translate }}</p>
+          
+          <div class="form-group" ng-class="{ 'has-error': registrationForm.username.$invalid && registrationForm.$dirty }">
+            <label class="control-label" for="inputUsername">{{ 'login.username' | translate }}</label>
+            <input class="form-control" type="text" id="inputUsername" name="username"
+                   required ng-minlength="3" ng-maxlength="50"
+                   ng-attr-placeholder="{{ 'registration.username_placeholder' | translate }}" ng-model="user.username" />
+            <span class="help-block" ng-show="registrationForm.username.$error.required && registrationForm.$dirty">{{ 'validation.required' | translate }}</span>
+            <span class="help-block" ng-show="registrationForm.username.$error.minlength && registrationForm.$dirty">{{ 'validation.too_short' | translate }}</span>
+            <span class="help-block" ng-show="registrationForm.username.$error.maxlength && registrationForm.$dirty">{{ 'validation.too_long' | translate }}</span>
+          </div>
+
+          <div class="form-group" ng-class="{ 'has-error': registrationForm.password.$invalid && registrationForm.$dirty }">
+            <label class="control-label" for="inputPassword">{{ 'login.password' | translate }}</label>
+            <input class="form-control" type="password" id="inputPassword" name="password"
+                   required ng-minlength="8" ng-maxlength="50" 
+                   ng-attr-placeholder="{{ 'registration.password_placeholder' | translate }}" ng-model="user.password" />
+            <span class="help-block" ng-show="registrationForm.password.$error.required && registrationForm.$dirty">{{ 'validation.required' | translate }}</span>
+            <span class="help-block" ng-show="registrationForm.password.$error.minlength && registrationForm.$dirty">{{ 'validation.password_too_short' | translate }}</span>
+            <span class="help-block" ng-show="registrationForm.password.$error.maxlength && registrationForm.$dirty">{{ 'validation.password_too_long' | translate }}</span>
+          </div>
+          
+          <div class="form-group" ng-class="{ 'has-error': registrationForm.passwordConfirm.$invalid && registrationForm.$dirty }">
+            <label class="control-label" for="inputPasswordConfirm">{{ 'registration.password_confirm' | translate }}</label>
+            <input class="form-control" type="password" id="inputPasswordConfirm" name="passwordConfirm"
+                   required ui-validate="'$value==user.password'" ui-validate-watch="'user.password'"
+                   ng-attr-placeholder="{{ 'registration.password_confirm_placeholder' | translate }}" ng-model="user.passwordConfirm" />
+            <span class="help-block" ng-show="registrationForm.passwordConfirm.$error.required && registrationForm.$dirty">{{ 'validation.required' | translate }}</span>
+            <span class="help-block" ng-show="registrationForm.passwordConfirm.$error.validator && registrationForm.$dirty">{{ 'validation.password_not_match' | translate }}</span>
+          </div>
+
+          <div class="form-group" ng-class="{ 'has-error': registrationForm.email.$invalid && registrationForm.$dirty }">
+            <label class="control-label" for="inputEmail">{{ 'registration.email' | translate }}</label>
+            <input class="form-control" type="email" id="inputEmail" name="email"
+                   required ng-attr-placeholder="{{ 'registration.email_placeholder' | translate }}" ng-model="user.email" />
+            <span class="help-block" ng-show="registrationForm.email.$error.required && registrationForm.$dirty">{{ 'validation.required' | translate }}</span>
+            <span class="help-block" ng-show="registrationForm.email.$error.email && registrationForm.$dirty">{{ 'validation.invalid_email' | translate }}</span>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block" 
+                    ng-disabled="registrationForm.$invalid" 
+                    ng-click="register()">
+              <span class="fas fa-user-plus"></span> {{ 'registration.submit' | translate }}
+            </button>
+          </div>
+          
+          <p class="text-center">
+            <a href="#/login">{{ 'registration.back_to_login' | translate }}</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="login-img-container col-sm-6 hidden-xs"></div>
+</div>

@@ -96,6 +96,15 @@ public class DirectoryUtil {
     }
 
     /**
+     * Returns the data directory.
+     * 
+     * @return Data directory.
+     */
+    public static Path getDataDirectory() {
+        return getDataSubDirectory("data");
+    }
+
+    /**
      * Returns a subdirectory of the base data directory
      * 
      * @return Subdirectory

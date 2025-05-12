@@ -253,6 +253,15 @@ angular.module('docs',
         }
       }
     })
+    .state('settings.registration', {
+      url: '/registration',
+      views: {
+        'settings': {
+          templateUrl: 'partial/docs/settings.registration.html',
+          controller: 'SettingsRegistration'
+        }
+      }
+    })
     .state('document', {
       url: '/document',
       abstract: true,
@@ -364,13 +373,21 @@ angular.module('docs',
         }
       }
     })
+    .state('registration', {
+      url: '/registration',
+      views: {
+        'page': {
+          templateUrl: 'partial/docs/registration.html',
+          controller: 'Registration'
+        }
+      }
+    })
     .state('user', {
       url: '/user',
       abstract: true,
       views: {
         'page': {
-          templateUrl: 'partial/docs/usergroup.html',
-          controller: 'UserGroup'
+          templateUrl: 'partial/docs/usergroup/usergroup.html'
         }
       }
     })
@@ -378,7 +395,8 @@ angular.module('docs',
       url: '',
       views: {
         'sub': {
-          templateUrl: 'partial/docs/usergroup.default.html'
+          templateUrl: 'partial/docs/usergroup/user.html',
+          controller: 'UserGroup'
         }
       }
     })
@@ -386,7 +404,7 @@ angular.module('docs',
       url: '/:username',
       views: {
         'sub': {
-          templateUrl: 'partial/docs/user.profile.html',
+          templateUrl: 'partial/docs/usergroup/profile.html',
           controller: 'UserProfile'
         }
       }
@@ -396,8 +414,7 @@ angular.module('docs',
       abstract: true,
       views: {
         'page': {
-          templateUrl: 'partial/docs/usergroup.html',
-          controller: 'UserGroup'
+          templateUrl: 'partial/docs/usergroup/usergroup.html'
         }
       }
     })
@@ -405,7 +422,8 @@ angular.module('docs',
       url: '',
       views: {
         'sub': {
-          templateUrl: 'partial/docs/usergroup.default.html'
+          templateUrl: 'partial/docs/usergroup/group.html',
+          controller: 'UserGroup'
         }
       }
     })
@@ -413,59 +431,15 @@ angular.module('docs',
       url: '/:name',
       views: {
         'sub': {
-          templateUrl: 'partial/docs/group.profile.html',
+          templateUrl: 'partial/docs/usergroup/profile.html',
           controller: 'GroupProfile'
         }
       }
     });
 
-  // Configuring Restangular
-  RestangularProvider.setBaseUrl('../api');
-
-  // Configuring Angular Translate
-  $translateProvider
-    .useSanitizeValueStrategy('escapeParameters')
-    .useStaticFilesLoader({
-      prefix: 'locale/',
-      suffix: '.json?@build.date@'
-    })
-    .registerAvailableLanguageKeys(['en', 'es', 'pt', 'fr', 'de', 'el', 'ru', 'it', 'pl', 'zh_CN', 'zh_TW', 'sq_AL'], {
-      'en_*': 'en',
-      'es_*': 'es',
-      'pt_*': 'pt',
-      'fr_*': 'fr',
-      'de_*': 'de',
-	    'el_*': 'el',
-      'ru_*': 'ru',
-      'it_*': 'it',
-	    'pl_*': 'pl',
-      '*': 'en'
-    })
-    .fallbackLanguage('en');
-
-  if (!_.isUndefined(localStorage.overrideLang)) {
-    // Set the current language if an override is saved in local storage
-    $translateProvider.use(localStorage.overrideLang);
-  } else {
-    // Or else determine the language based on the user's browser
-    $translateProvider.determinePreferredLanguage();
-    if (!$translateProvider.use()) {
-      $translateProvider.use('en');
-    }
-  }
-
-  // Configuring Timago
-  timeAgoSettings.fullDateAfterSeconds = 60 * 60 * 24 * 30; // 30 days
-
-  // Configuring tmhDynamicLocale
-  tmhDynamicLocaleProvider.localeLocationPattern('locale/angular-locale_{{locale}}.js');
-
   // Configuring $http to act like jQuery.ajax
   $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
   $httpProvider.defaults.headers.put['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
-  $httpProvider.defaults.headers.delete = {
-    'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8'
-  };
   $httpProvider.defaults.transformRequest = [function(data) {
     var param = function(obj) {
       var query = '';
@@ -501,9 +475,41 @@ angular.module('docs',
     
     return angular.isObject(data) && String(data) !== '[object File]' ? param(data) : data;
   }];
-
-  // Silence unhandled rejections
+  
   $qProvider.errorOnUnhandledRejections(false);
+  
+  // Configuring Restangular
+  RestangularProvider.setBaseUrl('../api');
+  
+  // Configuring Angular Translate
+  $translateProvider
+      .useSanitizeValueStrategy('sanitizeParameters')
+      .useStaticFilesLoader({
+        prefix: 'locale/',
+        suffix: '.json?@build.date@'
+      })
+      .registerAvailableLanguageKeys(['en', 'es', 'fr', 'de', 'ru', 'el', 'it', 'pl', 'zh_CN', 'zh_TW', 'sq_AL', 'pt'], {
+        'en_*': 'en',
+        'es_*': 'es',
+        'fr_*': 'fr',
+        'de_*': 'de',
+        'ru_*': 'ru',
+        'el_*': 'el',
+        'it_*': 'it',
+        'pl_*': 'pl',
+        'zh_CN_*': 'zh_CN',
+        'zh_TW_*': 'zh_TW',
+        'sq_AL_*': 'sq_AL',
+        'pt_*': 'pt'
+      })
+      .determinePreferredLanguage()
+      .fallbackLanguage('en');
+
+  // Configuring tmhDynamicLocale
+  tmhDynamicLocaleProvider.localeLocationPattern('locale/angular-locale_{{locale}}.js?@build.date@');
+  
+  // Configuring timeago
+  timeAgoSettings.fullDateAfterSeconds = 60 * 60 * 24 * 30; // 30 days
 })
 
 /**
@@ -512,69 +518,29 @@ angular.module('docs',
 .run(function($rootScope, $state, $stateParams, Restangular) {
   $rootScope.$state = $state;
   $rootScope.$stateParams = $stateParams;
+  $rootScope.appName = '';
 
   // Fetch the current theme configuration
-  $rootScope.appName = '';
   Restangular.one('theme').get().then(function(data) {
     $rootScope.appName = data.name;
+    
+    // Adding the stylesheet with the theme
+    var link = document.getElementById('theme-stylesheet');
+    link.href = '../api/theme/stylesheet';
+    
+    // Default page title
+    $rootScope.pageTitle = data.name;
+    
+    // Load favicon
+    var link = document.createElement('link');
+    link.rel = 'icon';
+    link.href = '../api/theme/image/favicon';
+    document.getElementsByTagName('head')[0].appendChild(link);
   });
-
-  // Languages
-  $rootScope.acceptedLanguages = [
-    { key: 'eng', label: 'English' },
-    { key: 'fra', label: 'Français' },
-    { key: 'ita', label: 'Italiano' },
-    { key: 'deu', label: 'Deutsch' },
-    { key: 'spa', label: 'Español' },
-    { key: 'por', label: 'Português' },
-    { key: 'pol', label: 'Polski' },
-    { key: 'rus', label: 'русский' },
-    { key: 'ukr', label: 'українська' },
-    { key: 'ara', label: 'العربية' },
-    { key: 'hin', label: 'हिन्दी' },
-    { key: 'chi_sim', label: '简体中文' },
-    { key: 'chi_tra', label: '繁体中文' },
-    { key: 'jpn', label: '日本語' },
-    { key: 'tha', label: 'ภาษาไทย' },
-    { key: 'kor', label: '한국어' },
-    { key: 'nld', label: 'Nederlands' },
-    { key: 'tur', label: 'Türkçe' },
-    { key: 'heb', label: 'עברית' },
-    { key: 'hun', label: 'Magyar' },
-    { key: 'fin', label: 'Suomi' },
-    { key: 'swe', label: 'Svenska' },
-    { key: 'lav', label: 'Latviešu' },
-    { key: 'dan', label: 'Dansk' },
-    { key: 'nor', label: 'Norsk' },
-    { key: 'vie', label: 'Tiếng Việt' },
-    { key: 'ces', label: 'Czech' },
-    { key: 'sqi', label: 'Shqip' }
-  ];
-})
-/**
- * Initialize ngProgress.
- */
-.run (function ($rootScope, ngProgressFactory, $http) {
-  $rootScope.ngProgress = ngProgressFactory.createInstance();
-
-  // Watch for the number of XHR running
-  $rootScope.$watch(function() {
-    return $http.pendingRequests.length > 0
-  }, function(loading) {
-    if (!loading) {
-      $rootScope.ngProgress.complete();
-    } else {
-      $rootScope.ngProgress.start();
-    }
+  
+  // Route changed event
+  $rootScope.$on('$stateChangeSuccess', function() {
+    // Scroll top
+    document.body.scrollTop = 0;
   });
-})
-/**
- * Initialize ngOnboarding.
- */
-.run (function ($rootScope) {
-  $rootScope.onboardingEnabled = false;
 });
-
-if (location.search.indexOf("protractor") > -1) {
-  window.name = 'NG_DEFER_BOOTSTRAP!';
-}

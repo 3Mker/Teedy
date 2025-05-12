@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="page-header">
+      <h1>{{ 'settings.registration.title' | translate }}</h1>
+    </div>
+
+    <p class="text-muted" translate="settings.registration.description"></p>
+
+    <div ng-show="pendingRequests.length == 0" class="alert alert-info">
+      <span>{{ 'settings.registration.no_pending' | translate }}</span>
+    </div>
+
+    <div class="table-responsive" ng-show="pendingRequests.length > 0">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>{{ 'settings.registration.username' | translate }}</th>
+          <th>{{ 'settings.registration.email' | translate }}</th>
+          <th>{{ 'settings.registration.date' | translate }}</th>
+          <th>{{ 'settings.registration.actions' | translate }}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="request in pendingRequests">
+          <td>{{ request.username }}</td>
+          <td>{{ request.email }}</td>
+          <td>{{ request.create_date | date: dateFormat }}</td>
+          <td>
+            <div class="btn-group">
+              <button type="button" class="btn btn-success" ng-click="approve(request)">
+                <span class="fas fa-check"></span> {{ 'settings.registration.approve' | translate }}
+              </button>
+              <button type="button" class="btn btn-danger" ng-click="reject(request)">
+                <span class="fas fa-times"></span> {{ 'settings.registration.reject' | translate }}
+              </button>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
