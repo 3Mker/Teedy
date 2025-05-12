@@ -16,6 +16,12 @@ pipeline {
                 sh 'mvn test -Dmaven.test.failure.ignore=true'
             }
         }
+
+        stage('JaCoCo') {
+            steps {
+                sh 'mvn jacoco:report'
+            }
+        }
         stage('Javadoc') {
             steps {
                 sh 'mvn javadoc:javadoc'
