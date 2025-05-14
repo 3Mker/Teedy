@@ -32,18 +32,18 @@ pipeline {
             }
         }
 
-        stage('Login to Docker Hub') {
-            steps {
-                script {
-                    // 使用 Jenkins 凭据管理中的 Docker Hub 凭据
-                    withCredentials([usernamePassword(credentialsId: '12213012', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASSWORD')]) {
-                        sh '''
-                            echo "$DOCKER_PASSWORD" | /usr/local/bin/docker login -u "$DOCKER_USER" --password-stdin
-                        '''
-                    }
-                }
-            }
-        }
+        // stage('Login to Docker Hub') {
+        //     steps {
+        //         script {
+        //             // 使用 Jenkins 凭据管理中的 Docker Hub 凭据
+        //             withCredentials([usernamePassword(credentialsId: '12213012', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASSWORD')]) {
+        //                 sh '''
+        //                     echo "$DOCKER_PASSWORD" | /usr/local/bin/docker login -u "$DOCKER_USER" --password-stdin
+        //                 '''
+        //             }
+        //         }
+        //     }
+        // }
 
         stage('Upload image') {
             steps {
