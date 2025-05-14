@@ -21,11 +21,6 @@ pipeline {
                 sh 'mvn jacoco:report'
             }
         }
-        stage('Site') {
-            steps {
-                sh 'mvn site'
-            }
-        }
         stage('Package') {
          steps {
          sh 'mvn package -DskipTests'
