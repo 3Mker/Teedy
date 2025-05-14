@@ -28,7 +28,7 @@ pipeline {
                 script {
                     // 构建 Docker 镜像
                     // sh "/usr/local/bin/docker build -t ${env.DOCKER_IMAGE}:${env.DOCKER_TAG} ."
-                     docker.build("${env.DOCKER_IMAGE}:${env.DOCKER_TAG}")
+                    sudo docker.build("${env.DOCKER_IMAGE}:${env.DOCKER_TAG}")
                 }
             }
         }
