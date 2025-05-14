@@ -15,6 +15,9 @@
     <maven.compiler.target>11</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
+    <!-- Plugins version -->
+    <org.jacoco.maven-plugin.version>0.8.10</org.jacoco.maven-plugin.version>
+    
     <!-- Dependencies version (external) -->
     <org.apache.commons.commons-compress.version>1.22</org.apache.commons.commons-compress.version>
     <org.apache.commons.commons-lang3.version>3.12.0</org.apache.commons.commons-lang3.version>
@@ -115,6 +118,27 @@
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-maven-plugin</artifactId>
         <version>${org.eclipse.jetty.jetty-maven-plugin.version}</version>
+      </plugin>
+
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>${org.jacoco.maven-plugin.version}</version>
+        <executions>
+          <execution>
+            <id>prepare-agent</id>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>report</id>
+            <phase>test</phase>
+            <goals>
+              <goal>report</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
