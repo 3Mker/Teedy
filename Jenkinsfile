@@ -5,6 +5,7 @@ pipeline {
         DEPLOYMENT_NAME = "hello-node"
         CONTAINER_NAME = "docs"
         IMAGE_NAME = "3mker/teedy:latest"
+        PATH = "/usr/local/bin:/opt/homebrew/bin:$PATH"
         MINIKUBE = "/opt/homebrew/bin/minikube"
         KUBECTL = "/opt/homebrew/bin/kubectl"
     }
